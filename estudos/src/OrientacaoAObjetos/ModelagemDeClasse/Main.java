@@ -1,5 +1,8 @@
 package OrientacaoAObjetos.ModelagemDeClasse;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -35,5 +38,28 @@ public class Main {
         conta2.exibirInformacoes();
         conta3.exibirInformacoes();
 
+        // CARRO
+        Carro carro1 = new Carro(4, "Terrify", "Ford", 2.5);
+        Carro carro2 = new Carro(4, "Onix", "Chevrolet" );
+        Carro carro3 = new Carro(4, "Q5", "Audi", 2.5);
+
+        carro1.exibirInformacoes();
+        carro2.exibirInformacoes();
+        carro3.exibirInformacoes();
+
+        //PAIS
+        Pais pais1 = new Pais ("Brasil", "1700000km", 100000);
+        Pais pais2 = new Pais ("Argentina", "14639km", 1800);
+        Pais pais3 = new Pais ("Peru", "1799m", 3728);
+        Pais pais4 = new Pais ("Paraguai", "9731km", 34738);
+
+        Pais pais = new Pais();
+        List<Pais> continente = new ArrayList<>();
+        continente.add(pais1);
+        continente.add(pais2);
+        continente.add(pais3);
+        continente.add(pais4);
+
+        pais.exibirInformacoes(continente);
     }
 }
