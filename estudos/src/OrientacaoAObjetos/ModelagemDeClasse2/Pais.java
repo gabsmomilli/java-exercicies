@@ -1,4 +1,4 @@
-package OrientacaoAObjetos.ModelagemDeClasse;
+package OrientacaoAObjetos.ModelagemDeClasse2;
 
 import java.util.List;
 
